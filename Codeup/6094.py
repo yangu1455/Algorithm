@@ -21,13 +21,15 @@
 
 
 n = int(input())
-k = input().split()
-m = ''
+k = list(map(int, input().split()))
+m = k[0]
 
-# print(k)
-
-for l in k :
-    if k[l+1] >= k[l]:
+for l in range(n) :
+    if m >= k[l]:
         m = k[l]
-    
-print(int(m))
+print(m)
+
+
+# for i in range(n):
+#     if(a>k[i]):
+#         a=k[i]
