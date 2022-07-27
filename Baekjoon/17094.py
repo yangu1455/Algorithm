@@ -1,5 +1,4 @@
-
-# 인덱스 에러
+# 17094번 Serious Problem
 
 l = int(input())
 s = list(input())
