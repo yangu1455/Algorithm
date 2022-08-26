@@ -23,7 +23,7 @@
 * 아픈 동물은 `INTAKE_CONDITION`이 Sick 인 경우를 뜻함
 
 -------
-
+✔️
 예를 들어 `ANIMAL_INS` 테이블이 다음과 같다면
 
 | ANIMAL_ID | ANIMAL_TYPE | DATETIME            | INTAKE_CONDITION | NAME     | SEX_UPON_INTAKE |
