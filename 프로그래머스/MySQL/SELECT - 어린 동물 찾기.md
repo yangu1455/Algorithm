@@ -25,7 +25,7 @@
 
 ----
 
-
+✔️
 예를 들어 `ANIMAL_INS` 테이블이 다음과 같다면
 
 | ANIMAL_ID | ANIMAL_TYPE | DATETIME            | INTAKE_CONDITION | NAME     | SEX_UPON_INTAKE |
