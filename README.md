@@ -6,6 +6,7 @@
 1. 백준 (파이썬)
 * 단계별 풀이 9-3까지 (파일 올리는 중)
   * 문제 내용 및 자세한 풀이 과정은 [https://yangu1455.tistory.com](https://yangu1455.tistory.com/) 참고
+* 그 외의 문제들도 풀이하고 [Baekjoon](https://github.com/yangu1455/Algorithm/tree/master/Baekjoon) 폴더에 업로드중!
 
 2. 프로그래머스
 * SQL
