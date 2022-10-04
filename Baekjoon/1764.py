@@ -17,9 +17,24 @@ N, M = map(int, input().split())
 
 # 이어서 둘째 줄부터 N개의 줄에 걸쳐 듣도 못한 사람의 이름과, 
 # N+2째 줄부터 보도 못한 사람의 이름이 순서대로 주어진다. 
+dict_ = {}
 
+for _ in range(N):
+    name_h = input()
+    if name_h not in dict_:
+        dict_[name_h] = 1
+    else:
+        dict_[name_h] += 1
 
+for _ in range(M):
+    name_s = input()
+    if name_s not in dict_:
+        pass
+    else:
+        dict_[name_s] += 1
 
+for i in range(len(dict_)):
+    if dict_[i]
 
 
 # 입력
