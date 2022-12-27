@@ -1,7 +1,7 @@
 # 2309번 일곱 난쟁이
 
 # 난쟁이들의 키를 받아서 리스트로 만든다!
-list_ = [int(input()) for i in range(9)]
+list_ = [int(input()) for _ in range(9)]
 # 리스트에 들어있는 키를 전부 합한다!
 total = sum(list_)
 
@@ -25,3 +25,16 @@ for i in range(9):
             for i in list_:
                print(i)
             exit()
+
+
+#=====================================
+# 조합(combination)을 이용해서 푸는 방법
+
+from itertools import combinations
+
+heights = [int(input()) for _ in range(9)]
+for combi in combinations(heights, 7):
+    if sum(combi) == 100:
+        for height in sorted(combi):
+            print(height)
+        break
