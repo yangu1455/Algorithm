@@ -36,16 +36,26 @@ res_list.sort()
 print(res_list[0])
 
 
-# # 입력
+#====================================
+# 딕셔너리 이용한 방법
+# 변수명 빼고 완전 똑같다!
+# d = dict()
+# for _ in range(int(input())):
+#     book = input()
+#     if book in d:
+#         d[book] += 1
+#     else:
+#         d[book] = 1
 
-# 5
-# top
-# top
-# top
-# top
-# kimtop
+# # d.keys()
+# # d.values()
+# # d.items()
 
+# m = max(d.values())
+# candi = []
+# for k, v in d.items():
+#     if v == m:
+#         candi.append(k)
 
-# # 출력
-
-# top
+# candi.sort()
+# print(candi[0])
