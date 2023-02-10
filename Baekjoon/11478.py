@@ -1,6 +1,7 @@
 # 11478번 서로 다른 부분 문자열의 개수
 
 S = input()
+# 중복을 피하기 위해서 set으로 설정
 word = set()
 
 for i in range(len(S)):
