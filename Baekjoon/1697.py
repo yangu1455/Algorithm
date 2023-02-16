@@ -13,52 +13,55 @@
 # https://letalearns.tistory.com/34
 # https://data-flower.tistory.com/78
 
-import sys
 
-input = sys.stdin.readline
+# 아래는 최단시간이 아님!
+# 문제 다 안읽고 처음 푼 방법
 
-N, K = map(int, input().rstrip().split())
+# import sys
+# input = sys.stdin.readline
+# N, K = map(int, input().rstrip().split())
 
-print(N, K)
+# res = N
+# second = 0
+# while res != K:
+#     x1 = res-1
+#     x2 = res+1
+#     x3 = 2*res
+#     if x1 == min(abs(K-x1), abs(K-x2), abs(K-x3)):
+#         res = x1
+#         second += 1
+#     elif x2 == min(abs(K-x1), abs(K-x2), abs(K-x3)):
+#         res = x2
+#         second += 1
+#     elif x3 == min(abs(K-x1), abs(K-x2), abs(K-x3)):
+#         rex = x3
+#         second += 1
 
-res = N
-second = 0
-while res != K:
-    x1 = res-1
-    x2 = res+1
-    x3 = 2*res
-    if x1 == min(abs(K-x1), abs(K-x2), abs(K-x3)):
-        res = x1
-        second += 1
-    elif x2 == min(abs(K-x1), abs(K-x2), abs(K-x3)):
-        res = x2
-        second += 1
-    elif x3 == min(abs(K-x1), abs(K-x2), abs(K-x3)):
-        rex = x3
-        second += 1
-
-print(second)
-
+# print(second)
 
 
 # ---------------------------------------------------
 
 from collections import deque
 
-n, k = map(int, input().split())
+N, K = map(int, input().split())
 max_n = 100000
 
 visited = [0] * (max_n + 1)
 
 def bfs():
     q = deque()
-    q.append(n)
+    q.append(N)
+
     while q:
         x = q.popleft()
-        if x == k:
+        # 수빈이가 K에 도착했을때
+        if x == K:
             print(visited[x])
             break
+        # 수빈이가 좌표이동할때
         for j in (x-1, x+1, x*2):
+            # 조건 확인
             if 0 <= j <= max_n and not visited[j]:
                 visited[j] = visited[x] + 1
                 q.append(j)
