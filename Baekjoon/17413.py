@@ -53,4 +53,4 @@ while i < len(S):
 if string:
     res += string[::-1]
 
-print(''.join(res))
+print(res)
