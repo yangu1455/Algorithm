@@ -1,5 +1,5 @@
 # 17413번 단어 뒤집기 2
-# 풀이 참고 https://hongcoding.tistory.com/62  => 많이 다르긴함..ㅎ
+# 풀이 참고 https://hongcoding.tistory.com/62  => 많이 다르긴함..
 
 # 띄어쓰기가 있으면 거꾸로
 # 괄호 안에 들어있으면 그대로 출력해야함
@@ -16,7 +16,7 @@ input = sys.stdin.readline
 S = input().rstrip()
 
 i = 0
-# 괄호가 밖의 문자열
+# 괄호 밖의 문자열
 string = ''
 # 결과
 res = ''
